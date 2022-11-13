@@ -1,8 +1,6 @@
 //======================================================================
 //----- Фильтр по категориям -----
 
-//todo Исправить косяки на бою
-
 const filterBtns = document.querySelectorAll(".navigation__button");
 const photos = document.querySelectorAll(".item-photo");
 
@@ -12,7 +10,8 @@ filterBtns.forEach((btn) => {
 
     filterPhotos(currentCategory, photos);
 
-    // Для случаев, когда для фоток не успела проиграть анимация появления и они все еще скрыты
+    // Для случаев, когда для фоток не успела проиграть анимация
+    // появления и они все еще скрыты
     setTimeout(() => {
       window.scrollBy(0, 1);
     }, 550);
@@ -49,10 +48,11 @@ photos.forEach((photo) => {
 
         // if (photo.classList.contains("_hide")) {
         photo.classList.add("_hidden");
-        // window.scrollBy(0, 1);
         // }
       }, 1000);
+      // window.scrollBy(0, 1);
     }
+    // window.scrollBy(0, 1);
   });
 });
 //======================================================================
