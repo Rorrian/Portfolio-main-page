@@ -14,7 +14,9 @@ filterBtns.forEach((btn) => {
     // появления и они все еще скрыты
     setTimeout(() => {
       window.scrollBy(0, 1);
-    }, 550);
+    }, 1500);
+
+    // window.scrollBy(0, 1);
   });
 });
 
@@ -46,13 +48,11 @@ photos.forEach((photo) => {
       setTimeout(() => {
         // todo Отловить момент когда скрываются все фото
 
-        // if (photo.classList.contains("_hide")) {
-        photo.classList.add("_hidden");
-        // }
-      }, 1000);
-      // window.scrollBy(0, 1);
+        if (photo.classList.contains("_hide")) {
+          photo.classList.add("_hidden");
+        }
+      }, 501);
     }
-    // window.scrollBy(0, 1);
   });
 });
 //======================================================================

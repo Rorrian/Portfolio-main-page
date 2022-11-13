@@ -409,10 +409,6 @@
 
 		z-index: 1;
 
-		// &:not(:last-child) {
-		// 	margin-bottom: rem(20);
-		// }
-
 		@media (min-width: $mobileSmall) {
 			align-items: center;
 		}
@@ -434,6 +430,7 @@
 		max-width: rem(198);
 		overflow: hidden;
 		text-overflow: ellipsis;
+		white-space: nowrap;
 
 		transition: color 0.3s ease 0s;
 

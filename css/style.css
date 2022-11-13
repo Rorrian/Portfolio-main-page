@@ -1306,6 +1306,7 @@ body {
   max-width: 12.375rem;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   transition: color 0.3s ease 0s;
 }
 .contacts__link:hover {
