@@ -1,6 +1,8 @@
 //======================================================================
 //----- Фильтр по категориям -----
 
+//todo Исправить косяки на бою
+
 const filterBtns = document.querySelectorAll(".navigation__button");
 const photos = document.querySelectorAll(".item-photo");
 
