@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <title>Draggable</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="js/libs/anim.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="header" data-anim="opacity">
+      <div class="header__container">
+        <h1 class="header__title title">Портфолио</h1>
+        <div class="header__inner">
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="" class="menu__link" data-goto=".about">О себе</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link" data-goto=".gallery">Работы</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link" data-goto=".contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="page__about about">
+        <div class="about__container">
+          <h2 class="about__title title" data-anim="fade-down-l">О себе</h2>
+
+          <p class="about__name" data-anim="fade-down-l">Наталья Кунегина</p>
+          <p class="about__profession" data-anim="fade-down-l">
+            HTML-верстальщик
+          </p>
+          <p class="about__location" data-anim="fade-down-l">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Россия, Тула</span>
+          </p>
+
+          <div class="about__skills skills">
+            <div class="skills__title" data-anim="fade-down-l">
+              Навыки и технологии:
+            </div>
+            <div class="skills__list">
+              <li class="skills__item" data-anim="fade-down-l">HTML</li>
+              <li class="skills__item" data-anim="fade-down-l" data-delay=".1">
+                CSS
+              </li>
+              <li class="skills__item" data-anim="fade-down-l" data-delay=".2">
+                SCSS
+              </li>
+              <li class="skills__item" data-anim="fade-down-l" data-delay=".3">
+                JS
+              </li>
+              <li class="skills__item" data-anim="fade-down-l" data-delay=".4">
+                Git
+              </li>
+              <li class="skills__item" data-anim="fade-down-l" data-delay=".5">
+                Webpack
+              </li>
+              <li class="skills__item" data-anim="fade-down-l" data-delay=".6">
+                Gulp
+              </li>
+              <li class="skills__item" data-anim="fade-down-l" data-delay=".7">
+                SQL
+              </li>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__gallery gallery">
+        <div class="gallery__container">
+          <div class="gallery__header" data-anim="fade-down-l">
+            <h2 class="gallery__subtitle title">Превью страниц</h2>
+            <h3 class="gallery__title title">Страницы портфолио</h3>
+            <p class="gallery__notion">
+              Просмотрите страницы работ, щелкнув по&nbsp;изображениям ниже
+            </p>
+          </div>
+          <nav class="gallery__navigation navigation" data-anim="fade-down-l">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <button
+                  type="button"
+                  class="navigation__button"
+                  data-filter="all"
+                >
+                  All
+                </button>
+              </li>
+              <li class="navigation__item">
+                <button
+                  type="button"
+                  class="navigation__button"
+                  data-filter="single-page"
+                >
+                  Specific
+                </button>
+              </li>
+              <li class="navigation__item">
+                <button
+                  type="button"
+                  class="navigation__button"
+                  data-filter="multipage"
+                >
+                  Multipage
+                </button>
+              </li>
+              <li class="navigation__item">
+                <button
+                  type="button"
+                  class="navigation__button"
+                  data-filter="animations"
+                >
+                  Animations
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="gallery__photos photos">
+            <ul class="photos__list">
+              <li class="photos__item item-photo multipage">
+                <a
+                  href="https://rorrian.github.io/Createx-Online-Shop/"
+                  class="item-photo__link"
+                  target="_blank"
+                  data-anim="focus-in"
+                >
+                  <img
+                    src="img/pages/01_2.png"
+                    alt="01"
+                    class="item-photo__img"
+                  />
+                  <span class="item-photo__description">
+                    Многостраничный сайт магазина с интерактивным добавлением
+                    товаров в корзину
+                  </span>
+                </a>
+              </li>
+              <li class="photos__item item-photo animations">
+                <a
+                  href="https://rorrian.github.io/Landing-page-Bright-Lights-Band/"
+                  class="item-photo__link"
+                  target="_blank"
+                  data-anim="focus-in"
+                >
+                  <img
+                    src="img/pages/02_2.png"
+                    alt="02"
+                    class="item-photo__img"
+                  />
+                  <span class="item-photo__description">
+                    Лендинг с&nbsp;аудио и видео контентом
+                  </span>
+                </a>
+              </li>
+              <li class="photos__item item-photo animations">
+                <a
+                  href="https://rorrian.github.io/Landing-page-3D-site/"
+                  class="item-photo__link"
+                  target="_blank"
+                  data-anim="focus-in"
+                >
+                  <img
+                    src="img/pages/03_2.png"
+                    alt="03"
+                    class="item-photo__img"
+                  />
+                  <span class="item-photo__description">
+                    Лендинг с&nbsp;прокруткой в&nbsp;глубину
+                  </span>
+                </a>
+              </li>
+              <li class="photos__item item-photo animations">
+                <a
+                  href="https://rorrian.github.io/Landing-page-with-Parallax-effect-forest-/"
+                  class="item-photo__link"
+                  target="_blank"
+                  data-anim="focus-in"
+                >
+                  <img
+                    src="img/pages/04_2.png"
+                    alt="02"
+                    class="item-photo__img"
+                  />
+                  <span class="item-photo__description">
+                    Лендинг с&nbsp;параллаксом при&nbsp;прокрутке
+                  </span>
+                </a>
+              </li>
+              <li class="photos__item item-photo animations">
+                <a
+                  href="https://rorrian.github.io/Landing-page-draggable-site-tiles-photo-dark-theme-preloader-/"
+                  class="item-photo__link"
+                  target="_blank"
+                  data-anim="focus-in"
+                >
+                  <img
+                    src="img/pages/05_2.png"
+                    alt="02"
+                    class="item-photo__img"
+                  />
+                  <span class="item-photo__description">
+                    Лендинг галереи c&nbsp;возможностью "перетаскивания" фото
+                  </span>
+                </a>
+              </li>
+              <li class="photos__item item-photo animations">
+                <a
+                  href="https://rorrian.github.io/Landing-page-with-Parallax-effect-on-mouse/"
+                  target="_blank"
+                  data-anim="focus-in"
+                  class="item-photo__link"
+                >
+                  <img
+                    src="img/pages/09_02.png"
+                    alt="02"
+                    class="item-photo__img"
+                  />
+                  <span class="item-photo__description">
+                    Лендинг с&nbsp;параллакс-эффектом при&nbsp;движении мыши
+                  </span>
+                </a>
+              </li>
+              <li class="photos__item item-photo single-page">
+                <a
+                  href="https://rorrian.github.io/Email-letter-/"
+                  class="item-photo__link"
+                  target="_blank"
+                  data-anim="focus-in"
+                >
+                  <img
+                    src="img/pages/07_2.png"
+                    alt="02"
+                    class="item-photo__img"
+                  />
+                  <span class="item-photo__description">
+                    Email-рассылка с&nbsp;темной темой. Корректное отображения
+                    во&nbsp;всех основных почтовых клиентах
+                  </span>
+                </a>
+              </li>
+              <li class="photos__item item-photo single-page">
+                <a
+                  href="https://rorrian.github.io/Car-leasing-calculator/"
+                  class="item-photo__link"
+                  target="_blank"
+                  data-anim="focus-in"
+                >
+                  <img
+                    src="img/pages/06_2.png"
+                    alt="02"
+                    class="item-photo__img"
+                  />
+                  <span class="item-photo__description">
+                    Калькулятор лизинга на&nbsp;JS
+                  </span>
+                </a>
+              </li>
+              <li class="photos__item item-photo multipage">
+                <a
+                  href="https://rorrian.github.io/Online-store-kniwes/"
+                  data-anim="focus-in"
+                  class="item-photo__link"
+                  target="_blank"
+                >
+                  <img
+                    src="img/pages/08_2.png"
+                    alt="02"
+                    class="item-photo__img"
+                  />
+                  <span class="item-photo__description">
+                    Многостраничный сайт магазина ножей. Адаптивность
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__contacts contacts">
+        <div class="contacts__container">
+          <div class="contacts__inner">
+            <h2 class="contacts__title title" data-anim="fade-down-l">
+              Контакты
+            </h2>
+
+            <div class="contacts__row" data-anim="fade-down-l">
+              <p class="contacts__text">
+                <i class="contacts__icon fa-solid fa-user"></i>
+                <span>Резюме на&nbsp;HH.ru:</span>
+              </p>
+              <a
+                href="https://tula.hh.ru/resume/7e3356aaff0732a5b30039ed1f30304c365863"
+                class="contacts__link"
+                >https://tula.hh.ru/resume/7e3356aaff0732a5b30039ed1f30304c365863</a
+              >
+            </div>
+
+            <div class="contacts__row" data-anim="fade-down-l">
+              <p class="contacts__text">
+                <i class="contacts__icon fa-regular fa-envelope"></i>
+                <span>Email:</span>
+              </p>
+              <a href="mailto:nkunegina@yandex.ru" class="contacts__link"
+                >nkunegina@yandex.ru</a
+              >
+            </div>
+            <div class="contacts__row" data-anim="fade-down-l">
+              <p class="contacts__text">
+                <i class="contacts__icon fa-brands fa-telegram"></i>
+                <span>Telegram:</span>
+              </p>
+              <a href="" class="contacts__link">@Rorrian</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
