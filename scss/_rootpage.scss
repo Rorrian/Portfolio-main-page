@@ -77,11 +77,12 @@
 	height: 78vh; //!
 	.webp & {
 		background: url("../img/bg3.webp") center / cover no-repeat;
+		background-position-y: top;
 	}
 	.no-webp & {
 		background: url("../img/bg3.jpg") center / cover no-repeat;
+		background-position-y: top;
 	}
-	background-position-y: top;
 
 	&:after {
 		pointer-events: none;
@@ -372,11 +373,12 @@
 
 	.webp & {
 		background: url("../img/bg2.webp") center / cover no-repeat;
+		background-position-y: top;
 	}
 	.no-webp & {
 		background: url("../img/bg2.jpg") center / cover no-repeat;
+		background-position-y: top;
 	}
-	background-position-y: top;
 
 	position: relative;
 
