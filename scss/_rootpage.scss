@@ -75,7 +75,12 @@
 //====================================================================================================
 .about {
 	height: 78vh; //!
-	background: url("../img/bg3.jpg") center / cover no-repeat;
+	.webp & {
+		background: url("../img/bg3.webp") center / cover no-repeat;
+	}
+	.no-webp & {
+		background: url("../img/bg3.jpg") center / cover no-repeat;
+	}
 	background-position-y: top;
 
 	&:after {
@@ -365,7 +370,12 @@
 	// max-height: 45vh; //!
 	max-height: rem(335);
 
-	background: url("../img/bg2.jpg") center / cover no-repeat;
+	.webp & {
+		background: url("../img/bg2.webp") center / cover no-repeat;
+	}
+	.no-webp & {
+		background: url("../img/bg2.jpg") center / cover no-repeat;
+	}
 	background-position-y: top;
 
 	position: relative;

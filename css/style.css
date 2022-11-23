@@ -912,8 +912,13 @@ body {
 
 .about {
   height: 78vh;
-  background: url("../img/bg3.jpg") center/cover no-repeat;
   background-position-y: top;
+}
+.webp .about {
+  background: url("../img/bg3.webp") center/cover no-repeat;
+}
+.no-webp .about {
+  background: url("../img/bg3.jpg") center/cover no-repeat;
 }
 .about:after {
   pointer-events: none;
@@ -1223,9 +1228,14 @@ body {
 }
 .contacts {
   max-height: 20.9375rem;
-  background: url("../img/bg2.jpg") center/cover no-repeat;
   background-position-y: top;
   position: relative;
+}
+.webp .contacts {
+  background: url("../img/bg2.webp") center/cover no-repeat;
+}
+.no-webp .contacts {
+  background: url("../img/bg2.jpg") center/cover no-repeat;
 }
 .contacts:after {
   pointer-events: none;
